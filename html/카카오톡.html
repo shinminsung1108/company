@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡</title>
+    <style>
+        body {
+            background-color: rgb(255, 235, 51);
+        }
+        #logo {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+
+        .login {
+            border: solid 1px lightgray;
+            width: 300px;
+            height: 40px;
+        }
+
+        #login1{
+            border-bottom: solid 0px white;
+        }
+
+        .login:focus {
+            outline:none;
+        }
+
+        .login:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+            color:transparent; 
+        }
+
+        button {
+            width: 308px;
+            height: 40px;
+            margin-top: 5px;
+            border: solid 1px lightgray;
+            border-radius: 3px;
+        }
+
+        #autologin {
+            margin-left: 90px;
+            color: lightgray;
+            border: solid 1px lightgray;
+            margin-top: 10px;
+        }
+
+        label {
+            color: gray;
+            font-size: 12px;
+        }
+
+        p{
+            color: gray;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="https://d1s648oz3i6hw8.cloudfront.net/static/image/kakaotalk_icon.png" width="200" height="200">
+    </div>
+    <form>
+        <input class="login" id="login1" type="tel" placeholder="카카오계정 (이메일 또는 전화번호)"> <br>
+        <input class="login" type="password" placeholder="비밀번호"> <br>
+        <button>로그인</button> <Br>
+    </form>
+    <input id="autologin" type="checkbox"> <label>자동로그인</label>
+    <p >카카오계정 찾기 | 비밀번호 재설정</p>
+</body>
+</html>

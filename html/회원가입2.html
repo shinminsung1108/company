@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            text-align: center;
+            font-weight: 500;
+            font-size: 52px;
+            margin-top: 30px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            border: solid 0px white;
+            border-bottom: solid 1px black;
+            width: 270px;
+            height: 40px;
+            padding-top: 20px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline:none;
+        }
+
+        button {
+            color: white;
+            background-color: #2E2E2E;
+            border: solid 0px white;
+            width: 270px;
+            height: 50px;
+            margin-top: 35px;
+            font-size: 16px;
+        }
+
+        #already {
+            margin-top: 15px;
+        }
+
+        #error {
+            margin-top: 80px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>가입하기</h1>
+    <form>
+        <input type="text" placeholder="이름"> <br>
+        <input type="text" placeholder="성"> <br>
+        <input type="email" placeholder="이메일"> <br>
+        <input type="password" placeholder="비밀번호"> <br>
+        <button>가입하기</button> <br>
+        <p id="already">이미 계정이 있습니까? <b>로그인하기</b> </p>
+        <p id="error">양식 입력 중 오류가 발생하면 여기에 메시지가 표시됩니다.</p>
+    </form>
+</body>
+</html>
